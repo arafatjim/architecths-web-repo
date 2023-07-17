@@ -65,12 +65,12 @@ nav h1, .some-fact{
            margin: 0 auto;
 
 }
-.banner-title{
+.banner-title,.sponsor h1{
           font-weight: 700;
           font-size: 4rem;
           color: #131313;
 }
-.banner-description,.features-text, .teams-content-description,.some-fact-text{
+.banner-description,.features-text, .teams-content-description,.some-fact-text,.sponsor p{
           font-size: 1rem;
           color: #727272;
           font-weight: 400;
@@ -179,6 +179,31 @@ padding: 10px;
   font-size: 1.2rem;
   font-weight: 600;
 }
+.sponsor{
+  text-align: center;
+  width: 70%;
+  margin: 20px auto;
+}
+.sponsor-container img{
+  width: 165px;
+  height: 70px;
+}
+.sponsor-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+}
+.copy-wright{
+  width: 80%;
+  height: 10vh;
+  background-color: #FFF4E7;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -265,6 +290,14 @@ padding: 10px;
       padding-left: 20px;
       padding-right: 20px;
     }
+    .sponsor-container{
+      flex-direction: column;
+      margin: auto;
+      
+    }
+    .sponsor-container img{
+      padding-top: 20px;
+    }
 }
 @media screen and (min-width:577px) and (max-width:960px) {
            nav, .teams-container{
@@ -306,6 +339,19 @@ padding: 10px;
               color:#727272 ;
               font-size: 1.2rem;
               font-weight: 600;
+            }
+            .sponsor-container{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              justify-content: space-around;
+              width: 80%;
+              margin: 0px auto;
+              padding-left: 50px;
+            }
+            .sponsor-container img{
+              justify-content: space-around;
+              align-items: center;
+              margin-left: 50px;
             }
             
             
