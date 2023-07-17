@@ -317,6 +317,10 @@ padding: 10px;
       margin-top: 50px;
       position:static
     }
+    .some-fact{
+      width: 90%;
+      margin: 10px auto;
+    }
     .facts{
       display: grid;
       grid-template-columns: 1fr;
